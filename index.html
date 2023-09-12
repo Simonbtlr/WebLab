@@ -3,76 +3,83 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="bird clicker lab птичбки">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!--  TODO: remove-->
-<script src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"></script>
 <header>
-    <nav class="top-menu">
-        <div class="logo"><img src="" alt=""></div>
-        <div class="menu">
-            <p><a href="#">
-                Yard
-            </a></p>
-            <p><a href="#">
-                Tree
-            </a></p>
-            <p><a href="#">
-                Shop
-            </a></p>
+    <nav class="l-top-menu">
+        <div class="top-menu-item logo">
+            <img src="logo.png" alt="logo">
         </div>
-        <div class="account"></div>
+        <div class="top-menu-item nav">
+            <p class="nav-item">
+                <a href="#">
+                    Yard
+                </a>
+            </p>
+            <p class="nav-item">
+                <a href="#">
+                    Tree
+                </a>
+            </p>
+            <p class="nav-item">
+                <a href="#">
+                    Shop
+                </a>
+            </p>
+        </div>
+        <div class="top-menu-item account">
+            account
+        </div>
     </nav>
-    <div class="bottom-menu"></div>
+    <div class="l-bottom-menu">
+        info?
+    </div>
 </header>
 <main>
-    <div class="main-window">
-        <h2>Yard</h2>
-        <div class="current-window">
-            <p class="bird">
-            <pre>
+    <div class="l-main-window">
+        <h2 class="main-window-item current-window-name">Yard</h2>
+        <div class="main-window-item current-window">
+            <div class="current-window-item yard">
+                <pre class="bird">
    ,_
-  >' )
+  <' )
   ( ( \
 mrf''|\
         </pre>
-            </p>
-            <p class="bird">
-            <pre>
+                <pre class="bird">
 
  \\
  (o>
 _(()___
  ||
         </pre>
-            </p>
-            <p class="bird">
-            <pre>
+                <pre class="bird">
    \\
    (o>
 \\_//)
  \_/_)
   _|_
         </pre>
-            </p>
-        </div>
-        <div class="info-panel">
-            <h4>Information</h4>
-            <div class="info">
-                <div class="wolf-quote">
-                    <q>
-                        Каждый в цирке <b>думает</b>, что знает в цирке, но не каждый, что в цирке знает, что в цирке не
-                        <i>каждый</i> знает думает.
-                    </q>
-                </div>
-                <div class="success-secret">
-                    <p>
-                        Формула моего успеха проста: <i><sub>пукают</sub> тихо, громко только <sup>срут</sup></i>
-                    </p>
-                </div>
             </div>
-            <div>
-                  <pre class="code">
+            <div class="current-window-item info-panel">
+                <h4 class="info-panel-item info-panel-name">Information</h4>
+                <div class="info-panel-item info">
+                    <div class="wolf-quote">
+                        <q>
+                            Каждый в цирке <b>думает</b>, что знает в цирке, но не каждый, что в цирке знает, что в
+                            цирке не
+                            <i>каждый</i> знает думает.
+                        </q>
+                    </div>
+                    <div class="success-secret">
+                        <p>
+                            Формула моего успеха проста: <i><sub>пукают</sub> тихо, громко только <sup>срут</sup></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="code-example">
+                  <code class="code">
 if (true == false)
     {
         while (false)
@@ -87,15 +94,17 @@ if (true == false)
             }
         }
     }
-                  </pre>
+                  </code>
+                </div>
             </div>
         </div>
+
     </div>
 </main>
 <footer>
-    <p>&copy; BebraCorp. 2023</p>
-    <p><a href="#">github</a></p>
-    <p><a href="#">something</a></p>
+    <p class="footer-item copyright">&copy; BebraCorp. 2023</p>
+    <p class="footer-item link"><a href="#">github</a></p>
+    <p class="footer-item link"><a href="#">something</a></p>
 </footer>
 </body>
 </html>
