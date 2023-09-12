@@ -3,40 +3,52 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="bird clicker lab птичбки">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="styles.css">
+<!--    <link rel="stylesheet" href="borders.css">-->
 </head>
 <body>
 <header>
     <nav class="l-top-menu">
         <div class="top-menu-item logo">
-            <img src="logo.png" alt="logo">
+            <a href="#">
+                <img src="logo.png" alt="logo">
+            </a>
         </div>
-        <div class="top-menu-item nav">
-            <p class="nav-item">
+        <ul class="top-menu-item nav">
+            <li class="nav-item">
                 <a href="#">
-                    Yard
+                    <span>Yard</span>
                 </a>
-            </p>
-            <p class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a href="#">
-                    Tree
+                    <span>Tree</span>
                 </a>
-            </p>
-            <p class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a href="#">
-                    Shop
+                    <span>Shop</span>
                 </a>
-            </p>
-        </div>
+            </li>
+        </ul>
         <div class="top-menu-item account">
-            account
+            <p class="account-item name">account name</p>
+            <p class="account-item pfp">
+                <a href="#">
+                    <img src="default-pfp.png" alt="account pfp">
+                </a>
+            </p>
         </div>
     </nav>
-    <div class="l-bottom-menu">
-        info?
-    </div>
 </header>
 <main>
+    <div class="l-bottom-menu">
+        <div class="success-secret">
+            Формула моего успеха проста: <i><sub>пукают</sub> тихо, громко только <sup>срут</sup></i>
+        </div>
+    </div>
     <div class="l-main-window">
         <h2 class="main-window-item current-window-name">Yard</h2>
         <div class="main-window-item current-window">
@@ -71,11 +83,6 @@ _(()___
                             цирке не
                             <i>каждый</i> знает думает.
                         </q>
-                    </div>
-                    <div class="success-secret">
-                        <p>
-                            Формула моего успеха проста: <i><sub>пукают</sub> тихо, громко только <sup>срут</sup></i>
-                        </p>
                     </div>
                 </div>
                 <div class="code-example">

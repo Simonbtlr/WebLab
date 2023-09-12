@@ -1,0 +1,42 @@
+body {
+    color: #000000; /* black */
+    background: #cfe4ef /* light blue */
+                url("cloud.png");
+}
+
+.l-bottom-menu, .l-main-window,
+ .top-menu-item.account {
+    background: #bfcdee; /* blue */
+}
+
+.current-window-item.yard {
+    background-image: url("yard.jpg");
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+
+.current-window-item.info-panel,
+.nav-item
+{
+    background: #96b5f6;
+}
+
+.main-window-item.current-window-name {
+    background: linear-gradient(to right,
+                                transparent,
+                                #809ee0,
+                                transparent);
+}
+
+.bird {
+    color: #cfe4ef;
+    text-shadow: #000000 1px 1px 2px;
+}
+
+/*
+#EBE57A yellowish
+#83E696 green
+#B6DEF2 light blue
+#7C35DB dark blue
+#F7D0D0 skin
+*/
