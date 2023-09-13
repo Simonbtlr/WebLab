@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    color: #271a4b; /* very dark blue */
 }
 
 .main-window-item.current-window-name {
@@ -21,12 +22,6 @@ li.nav-item {
     list-style-type: none;
 }
 
-.nav-item > a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 .nav-item,
 .l-main-window,
 .l-bottom-menu,
@@ -36,5 +31,43 @@ li.nav-item {
 
 .main-window-item.current-window-name,
 .info-panel-item.info-panel-name {
-    color: #331e67; /* dark blue */
+    color: #2b1660; /* dark blue */
+}
+
+.l-bottom-menu {
+    color: #3b1667; /* dark violet */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #271a4b;
+    font-weight: bold;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #5579f5; /* blue */
+    background: rgba(224, 240, 250, 0.8); /* very light blue */
+}
+
+.success-secret > span {
+    padding-top: 5px;
+    font-size: small;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-item > .link {
+    text-decoration: none;
+}
+
+.footer-item > .link:visited {
+    text-decoration: none;
+}
+
+.footer-item > .link:hover {
+    color: #848eff;
 }
