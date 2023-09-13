@@ -4,6 +4,7 @@
     border: 2px dashed black;
 }
 
-.logo > a > img, .account-item.pfp {
+.logo > a > img, .account-item.pfp,
+.nav-item a {
     border: 2px dashed red;
 }

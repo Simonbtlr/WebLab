@@ -1,7 +1,7 @@
 body {
     margin: auto;
     padding: 2%;
-    width: 800px;
+    width: 900px;
 }
 
 .l-top-menu, .l-bottom-menu, .l-main-window {
@@ -129,15 +129,36 @@ footer {
     margin: 5px;
 }
 
-.account-item.name {
-}
-
 .l-bottom-menu {
     padding: 0;
     height: 30px;
 }
 
 .success-secret {
+    max-height: 30px;
     height: inherit;
+    display: flex;
+}
+
+.news-icon {
+    max-height: inherit;
     margin: 5px;
+}
+
+.nav-item a {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.nav-icon {
+    max-height: 60%;
+    max-width: inherit;
+}
+
+.nav-link > p {
+    margin: 0;
+}
+
+.account-item.name {
+    margin-top: 2px;
 }

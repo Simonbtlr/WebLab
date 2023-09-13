@@ -1,9 +1,14 @@
+body {
+    font-family: sans-serif;
+}
+
 .main-window-item.current-window-name {
     text-align: center;
 }
 
 .code-example {
     white-space: pre-wrap;
+    /* remove whitespaces above and below */
     margin-top: -1em;
     margin-bottom: -2em;
 }
@@ -20,4 +25,16 @@ li.nav-item {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.nav-item,
+.l-main-window,
+.l-bottom-menu,
+.top-menu-item.account {
+    border: 1px solid #ffffff; /* white */
+}
+
+.main-window-item.current-window-name,
+.info-panel-item.info-panel-name {
+    color: #331e67; /* dark blue */
 }
