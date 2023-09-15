@@ -1,10 +1,9 @@
 body {
     font-family: sans-serif;
-    color: #271a4b; /* very dark blue */
 }
 
-.main-window-item.current-window-name {
-    text-align: center;
+#container, footer {
+    background-color: #ffffff;
 }
 
 .code-example {
@@ -14,60 +13,17 @@ body {
     margin-bottom: -2em;
 }
 
-.l-main-window {
+#usertab {
+    border-radius: 7px 7px 0 0;
+}
+
+#usertab, .nav-button {
+    background-color: #bcd1ff; /* blue */
+}
+
+.yard-field {
     border-radius: 5px;
-}
-
-li.nav-item {
-    list-style-type: none;
-}
-
-.nav-item,
-.l-main-window,
-.l-bottom-menu,
-.top-menu-item.account {
-    border: 1px solid #ffffff; /* white */
-}
-
-.main-window-item.current-window-name,
-.info-panel-item.info-panel-name {
-    color: #2b1660; /* dark blue */
-}
-
-.l-bottom-menu {
-    color: #3b1667; /* dark violet */
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #271a4b;
-    font-weight: bold;
-}
-
-.nav-link:visited {
-    text-decoration: none;
-}
-
-.nav-link:hover {
-    color: #5579f5; /* blue */
-    background: rgba(224, 240, 250, 0.8); /* very light blue */
-}
-
-.success-secret > span {
-    padding-top: 5px;
-    font-size: small;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.footer-item > .link {
-    text-decoration: none;
-}
-
-.footer-item > .link:visited {
-    text-decoration: none;
-}
-
-.footer-item > .link:hover {
-    color: #848eff;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
 }
