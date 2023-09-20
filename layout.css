@@ -3,11 +3,12 @@ body {
     width: 950px;
 }
 
-@media screen and (max-device-width: 950px) {
+@media screen and (max-width: 950px) {
     body, footer {
         width: 100%;
     }
 }
+
 
 .darken {
     position: absolute;
@@ -18,7 +19,7 @@ body {
     z-index: -1;
 }
 
-@media screen and (max-device-width: 950px) {
+@media screen and (max-width: 950px) {
     .darken {
         display: none;
     }
@@ -109,7 +110,7 @@ footer {
     height: inherit;
 }
 
-@media screen and (max-device-width: 550px) {
+@media screen and (max-width: 550px) {
     #usertab {
         width: 200px;
         height: 80px;
@@ -187,7 +188,7 @@ footer {
     margin-top: 5px;
 }
 
-@media screen and (max-device-width: 950px) {
+@media screen and (max-width: 950px) {
     #yard-container {
         display: block;
     }
@@ -215,7 +216,7 @@ footer {
         text-align: center;
     }
 }
-@media screen and (max-device-width: 700px) {
+@media screen and (max-width: 700px) {
     .yard-field-container {
         max-height: 400px;
     }
@@ -224,7 +225,7 @@ footer {
         width: calc(100% - 200px);
     }
 }
-@media screen and (max-device-width: 500px) {
+@media screen and (max-width: 500px) {
     .yard-field-container {
         max-height: 260px;
     }
