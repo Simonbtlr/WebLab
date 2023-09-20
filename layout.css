@@ -3,6 +3,12 @@ body {
     width: 950px;
 }
 
+@media screen and (max-device-width: 950px) {
+    body, footer {
+        width: 100%;
+    }
+}
+
 .darken {
     position: absolute;
     top: 0;
@@ -10,6 +16,12 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+@media screen and (max-device-width: 950px) {
+    .darken {
+        display: none;
+    }
 }
 
 .fade {
@@ -97,6 +109,24 @@ footer {
     height: inherit;
 }
 
+@media screen and (max-device-width: 550px) {
+    #usertab {
+        width: 200px;
+        height: 80px;
+    }
+
+    #username {
+        width: 115px;
+    }
+    #currency {
+        width: 115px;
+    }
+    #pfp {
+        width: 63px;
+        height: 63px;
+    }
+}
+
 #nav {
     display: flex;
     justify-content: space-between;
@@ -104,9 +134,15 @@ footer {
     height: 55px;
 }
 
-.nav-button {
+#nav > .nav-button {
     height: inherit;
     flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
 }
 
 #yard-container {
@@ -116,13 +152,15 @@ footer {
 
 .yard-field-container {
     width: 650px;
-    max-height: 550px;
+    max-height: 100%;
     margin-top: 5px;
     margin-left: 10px;
 }
 
 .yard-field {
     height: 450px;
+    max-height: inherit;
+    max-width: inherit;
     margin: 0;
     padding: 0;
     position: relative;
@@ -137,16 +175,63 @@ footer {
 
 .yard-btn {
     margin: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 2px 10px;
 }
 
 .yard-info-panel {
     width: 250px;
+    margin: 5px 10px 10px 5px;
+    padding: 5px;
+}
+.yard-info-panel > h4 {
     margin-top: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 3px;
+}
+
+@media screen and (max-device-width: 950px) {
+    #yard-container {
+        display: block;
+    }
+
+    .yard-field-container {
+        width: 100%;
+        max-width: calc(100% - 25px);
+        margin: auto;
+    }
+
+    .yard-field {
+        margin: auto;
+    }
+
+    .yard-buttons {
+        margin: 5px;
+    }
+
+    .yard-info-panel {
+        margin: auto;
+        width: calc(100% - 300px);
+    }
+
+    .yard-info-panel > h4 {
+        text-align: center;
+    }
+}
+@media screen and (max-device-width: 700px) {
+    .yard-field-container {
+        max-height: 400px;
+    }
+    .yard-info-panel {
+        margin: 45px auto auto;
+        width: calc(100% - 200px);
+    }
+}
+@media screen and (max-device-width: 500px) {
+    .yard-field-container {
+        max-height: 260px;
+    }
+
+    .yard-info-panel {
+        width: calc(100% - 100px);
+    }
 }
 
 #yard > h2 {
@@ -160,14 +245,14 @@ footer {
 }
 
 #bird-1 {
-    top: 100px;
-    left: 200px
+    top: 1%;
+    left: 2%;
 }
 #bird-2 {
-    top: 150px;
-    left: 20px
+    top: 50%;
+    left: 30%
 }
 #bird-3 {
-    top: 300px;
-    left: 440px
+    top: 30%;
+    left: 85%;
 }
