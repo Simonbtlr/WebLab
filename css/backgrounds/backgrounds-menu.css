@@ -1,6 +1,6 @@
 body {
     background: #cfe4ef /* very light blue */
-                url("/images/cloud.png");
+                url(../images/cloud.png);
 }
 
 #container, footer {
@@ -22,7 +22,7 @@ body {
 }
 
 #banner {
-    background-image: url("/images/banner-bg.png");
+    background-image: url(../images/banner-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100px;
