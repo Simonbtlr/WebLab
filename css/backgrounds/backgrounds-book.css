@@ -3,7 +3,7 @@
 }
 
 #birds-table-container td:nth-child(5n+1) {
-    background-color: #d4deff; /*  */
+    background-color: #d4deff; /* light blue */
 }
 
 #birds-table tr:nth-child(even) {
