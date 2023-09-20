@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    color: #202b5d; /* dark blue */
+}
+
+.footer-item > a,
+.footer-item > a:visited {
+    text-decoration: none;
+}
+.footer-item > a:hover {
+    color: #4343ff; /* rich blue */
+}
+
+#usertab {
+    border-radius: 7px 7px 0 0;
+}
+
+#username {
+    font-weight: bold;
+    color: #4343ff; /* rich blue */
+    text-decoration: none;
+}
+
+#nav > .nav-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4f4fbb; /* dark blue */
+}
+
+#nav > .nav-button:hover,
+#nav > .nav-button.current {
+    color: #ffffff; /* white */
+    background-color: #b3b3ff; /* light blue */
+}

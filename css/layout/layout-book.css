@@ -1,0 +1,10 @@
+#birds-table-container {
+    max-width: 90%;
+    margin: auto;
+}
+
+#birds-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}

@@ -43,14 +43,3 @@ body {
 #usertab, .nav-button {
     background-color: #bcd1ff; /* blue */
 }
-
-.yard-field {
-    background-image: url("/images/yard.jpg");
-    background-repeat: no-repeat;
-    background-size: 140%;
-    background-position: -40px -40px;
-}
-
-.yard-info-panel, .yard-btn {
-    background-color: #d4deff; /* light blue */
-}
