@@ -1,6 +1,6 @@
 body {
     background: #cfe4ef /* very light blue */
-                url("cloud.png");
+                url("/images/cloud.png");
 }
 
 #container, footer {
@@ -22,7 +22,7 @@ body {
 }
 
 #banner {
-    background-image: url("banner-bg.png");
+    background-image: url("/images/banner-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100px;
@@ -45,7 +45,7 @@ body {
 }
 
 .yard-field {
-    background-image: url("yard.jpg");
+    background-image: url("/images/yard.jpg");
     background-repeat: no-repeat;
     background-size: 140%;
     background-position: -40px -40px;
