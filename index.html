@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Bird clicker - Yard</title>
+    <title>BirdLife - Yard</title>
     <meta charset="utf-8">
     <meta name="keywords" content="bird clicker lab птичбки">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="background-colors.css">
-    <link rel="stylesheet" href="styles.css">
-<!--    <link rel="stylesheet" href="borders.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout/layout-menu.css">
+    <link rel="stylesheet" href="css/layout/layout-yard.css">
+    <link rel="stylesheet" href="css/backgrounds/backgrounds-menu.css">
+    <link rel="stylesheet" href="css/backgrounds/backgrounds-yard.css">
+    <link rel="stylesheet" href="css/styles/styles-menu.css">
+    <link rel="stylesheet" href="css/styles/styles-yard.css">
+
+    <script src="js/load_time.js"></script>
 </head>
 <body>
 <header>
-    <nav class="l-top-menu">
-        <div class="top-menu-item logo">
-            <a href="#">
-                <img src="logo.png" alt="logo">
-            </a>
-        </div>
-        <ul class="top-menu-item nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <img src="yard-icon.png" alt="" class="nav-icon">
-                    <p>Yard</p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <img src="tree-icon.png" alt="" class="nav-icon">
-                    <p>Tree</p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <img src="shop-icon.png" alt="" class="nav-icon">
-                    <p>Shop</p>
-                </a>
-            </li>
-        </ul>
-        <div class="top-menu-item account">
-            <p class="account-item name">account_name</p>
-            <p class="account-item pfp">
-                <a href="#">
-                    <img src="default-pfp.png" alt="account pfp">
-                </a>
-            </p>
-        </div>
-    </nav>
 </header>
 <main>
-    <div class="l-bottom-menu">
-        <div class="success-secret">
-            <img src="news-icon.png" alt="" class="news-icon">
-            <span>Формула моего успеха проста: <i><sub>пукают</sub> тихо, громко только <sup>срут</sup></i></span>
+    <div class="darken"></div>
+    <div class="fade" id="fade-left"></div>
+    <div class="fade" id="fade-right"></div>
+    <div id="container">
+        <div id="banner">
+            <div id="logo">
+                <a href="#">
+                    <img src="css/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div id="usertab">
+                <a href="" id="username">
+                    username_popochsaddassadaaaaaaaaaaaaaa
+                </a>
+                <div id="currency">
+                    <div class="currency-coins">
+                        <img src="" alt="">
+                        <span id="login-coins">
+                            <span id="user_coins">0</span>
+                            coins
+                        </span>
+                    </div>
+                    <div class="currency-seeds">
+                        <img src="" alt="">
+                        <span id="login-seeds">
+                            <span id="user_seeds">0</span>
+                            seeds
+                        </span>
+                    </div>
+                </div>
+                <span id="pfp">
+                    <img src="css/images/yard-icon.png" alt="pfp">
+                </span>
+            </div>
         </div>
-    </div>
-    <div class="l-main-window">
-        <h2 class="main-window-item current-window-name">Yard</h2>
-        <div class="main-window-item current-window">
-            <div class="current-window-item yard">
-                <pre class="bird">
+        <div id="nav">
+            <a href="book_page.html" class="nav-button">Book</a>
+            <a href="child_labour.html" class="nav-button">Child Labour</a>
+            <a href="index.html" class="nav-button current">Yard</a>
+            <a href="shop.html" class="nav-button">Shop</a>
+            <a href="home.html" class="nav-button">Home</a>
+        </div>
+        <div id="main-window">
+            <div id="yard">
+                <h2>Yard</h2>
+                <div id="yard-container">
+                    <div class="yard-field-container">
+                        <div class="yard-field">
+                            <pre id="bird-1" class="bird">
    ,_
   <' )
   ( ( \
 mrf''|\
-        </pre>
-                <pre class="bird">
-
+                </pre>
+                            <pre id="bird-2" class="bird">
  \\
  (o>
 _(()___
  ||
-        </pre>
-                <pre class="bird">
+                        </pre>
+                            <pre id="bird-3" class="bird">
    \\
    (o>
 \\_//)
  \_/_)
   _|_
-        </pre>
-            </div>
-            <div class="current-window-item info-panel">
-                <h4 class="info-panel-item info-panel-name">Information</h4>
-                <div class="info-panel-item info">
-                    <div class="wolf-quote">
-                        <q>
-                            Каждый в цирке <b>думает</b>, что знает в цирке, но не каждый, что в цирке знает, что в
-                            цирке не
-                            <i>каждый</i> знает думает.
-                        </q>
+            </pre>
+                        </div>
+                        <div class="yard-buttons">
+                            <a href="#" id="btn-throw-seeds" class="yard-btn">
+                                Throw seeds
+                            </a>
+                            <a href="#" id="btn-shoo-birds" class="yard-btn">
+                                Shoo birds
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="code-example">
-                  <code class="code">
+                    <div class="yard-info-panel">
+                        <h4>Information</h4>
+                        <div class="info">
+                            <div class="wolf-quote">
+                                <q>
+                                    Каждый в цирке <b>думает</b>, что знает в цирке, но не каждый, что в цирке знает,
+                                    что в
+                                    цирке не
+                                    <i>каждый</i> знает думает.
+                                </q>
+                            </div>
+                            <div class="success-secret">
+                                <span>Формула моего успеха проста: <i><sub>пукают</sub> тихо, громко только <sup>срут</sup></i></span>
+                            </div>
+                        </div>
+                        <div class="code-example">
+                            <code>
 if (true == false)
 {
     while (false)
     {
         try
         {
-
         }
         catch (Exception)
         {
@@ -106,11 +125,12 @@ if (true == false)
         }
     }
 }
-                  </code>
+                            </code>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </main>
 <footer>

@@ -1,0 +1,45 @@
+body {
+    background: #cfe4ef /* very light blue */
+                url(../images/cloud.png);
+}
+
+#container, footer {
+    background-color: #ffffff; /* white */
+}
+
+.darken {
+    background-color: rgba(102, 66, 112, 0.05); /* darken the background */
+}
+
+#fade-left {
+    background: linear-gradient(to right, #ffffff 15%, transparent); /* white */
+    background-blend-mode: overlay;
+}
+
+#fade-right {
+    background: linear-gradient(to left, #ffffff 15%, transparent); /* white */
+    background-blend-mode: overlay;
+}
+
+#banner {
+    background-image: url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100px;
+    background-color: #eef2fc; /* white */
+}
+
+@media screen and (max-device-width: 750px) {
+    #banner {
+        background-position: 0;
+    }
+}
+@media screen and (max-device-width: 500px) {
+    #banner {
+        background-size: cover;
+    }
+}
+
+#usertab, .nav-button {
+    background-color: #bcd1ff; /* blue */
+}

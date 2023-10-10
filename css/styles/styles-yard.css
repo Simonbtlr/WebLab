@@ -1,0 +1,39 @@
+#yard > h2 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.yard-field {
+    border-radius: 5px;
+    border-color: #2b5e30; /* dark green */
+    border-style: solid;
+    border-width: 2px;
+}
+
+.yard-btn,
+.yard-btn:visited {
+    text-decoration: none;
+}
+.yard-btn:hover {
+    color:#4343ff; /* rich blue */
+    background-color: #f7f7ff; /* white */
+}
+
+.yard-info-panel, .yard-btn {
+    border-radius: 3px;
+    border-color: #e5eeff; /* very light blue */
+    border-style: solid;
+    border-width: 2px;
+}
+
+.bird {
+    color: #ffffff; /* white */
+}
+
+.code-example {
+    white-space: pre-wrap;
+    /* remove whitespaces from above and below */
+    margin-top: -1em;
+    margin-bottom: -2em;
+}
