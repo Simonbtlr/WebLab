@@ -3,6 +3,12 @@ body {
     color: #202b5d; /* dark blue */
 }
 
+.h2-basic {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .footer-item > a,
 .footer-item > a:visited {
     text-decoration: none;

@@ -1,11 +1,11 @@
-#birds-table th {
+.birds-table th {
     background-color: #bcd1ff; /* blue */
 }
 
-#birds-table-container td:nth-child(5n+1) {
+.birds-table-container td:nth-child(5n+1) {
     background-color: #d4deff; /* light blue */
 }
 
-#birds-table tr:nth-child(even) {
+.birds-table tr:nth-child(even) {
     background-color: #edf3fc; /* light blue */
 }

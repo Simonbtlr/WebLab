@@ -3,7 +3,7 @@ body {
                 url(../images/cloud.png);
 }
 
-#container, footer {
+.container, footer {
     background-color: #ffffff; /* white */
 }
 
@@ -11,13 +11,13 @@ body {
     background-color: rgba(102, 66, 112, 0.05); /* darken the background */
 }
 
-#fade-left {
-    background: linear-gradient(to right, #ffffff 15%, transparent); /* white */
+.fade-left {
+    background: linear-gradient(to right, #ffffff 5%, transparent); /* white */
     background-blend-mode: overlay;
 }
 
-#fade-right {
-    background: linear-gradient(to left, #ffffff 15%, transparent); /* white */
+.fade-right {
+    background: linear-gradient(to left, #ffffff 5%, transparent); /* white */
     background-blend-mode: overlay;
 }
 
