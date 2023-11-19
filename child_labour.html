@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="css/styles/styles-child_labour.css">
     <link rel="stylesheet" href="css/styles/styles-global.css">
 
-    <script src="js/load_time.js"></script>
-    <script src="js/current-nav-button.js"></script>
+    <script src="js/global/load_time.js"></script>
+    <script src="js/global/current-nav-button.js"></script>
+    <script src="js/child_labour.js"></script>
 </head>
 <body>
 <header>
@@ -64,7 +65,7 @@
         </div>
         <div class="main-window">
             <div class="child-labour">
-                <h2 class="basic_h2">Child Labour</h2>
+                <h2 class="h2-basic">Child Labour</h2>
                 <div class="child-labour-board">
                     <ul class="nav-mission-board">
                         <li class="nav-mission-board-btn active">
@@ -74,24 +75,32 @@
                             <span>Train</span>
                         </li>
                     </ul>
-                    <div class="mission-board active">
-                        <div class="board-form">
+                    <div class="board mission-board">
+                        <div class="board-form-container">
                             <h4 class="board-form-header">Add mission!</h4>
-                            <form action="">
-                                <label for="mission-name"></label>
-                                <input type="text" id="mission-name">
-                                <label for="mission-conditions"></label>
-                                <input type="text" id="mission-conditions">
-                                <label for="mission-reward"></label>
-                                <input type="text" id="mission-reward">
-                                <label for="mission-time-limit"></label>
-                                <input type="text" id="mission-time-limit">
+                            <form id="board-form" action="">
+                                <label for="mission-name">Mission name: </label>
+                                <input type="text" id="mission-name" placeholder="Mission name" required>
+
+                                <label for="mission-description">Mission description: </label>
+                                <textarea form="board-form" id="mission-description"
+                                          maxlength="200" name="mission-description">
+                                </textarea>
+
+                                <label for="mission-reward">Mission reward: </label>
+                                <input type="number" min="0" id="mission-reward" required>
+
+                                <label for="mission-time-limit">Mission time limit: </label>
+                                <input type="datetime-local" id="mission-time-limit" required>
+
+                                <!-- Submit button -->
                                 <input type="submit" value="Let's go!">
                             </form>
                         </div>
-                        <div class="board-form-result-container"></div>
+                        <button id="clear-missions-btn" type="button">Clear local missions :(</button>
+                        <div id="board-form-result-container"></div>
                     </div>
-                    <div class="train-board"></div>
+                    <div class="board train-board" hidden></div>
                 </div>
             </div>
         </div>

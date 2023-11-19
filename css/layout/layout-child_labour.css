@@ -1,0 +1,76 @@
+.child-labour-board {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.child-labour {
+    padding: 8px;
+}
+
+.board-form-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav-mission-board {
+    margin-top: 0;
+    padding: 5px;
+    min-width: 100px;
+    max-height: 55px;
+}
+
+@media screen and (max-width: 800px) {
+    .child-labour-board {
+        display: block;
+    }
+    .nav-mission-board {
+        display: flex;
+    }
+}
+
+.nav-mission-board-btn {
+    margin: 5px;
+}
+
+.board-form-container {
+    margin: 2%;
+    padding: 2%;
+}
+
+.board {
+    padding: 5px;
+    width: 100%;
+}
+
+#board-form {
+    text-align: center;
+}
+
+#board-form > label {
+    display: block;
+}
+
+#board-form-result-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 2%;
+    text-align: center;
+    height: 300px;
+    width: 250px;
+    padding: 1%;
+}
+
+.card-description {
+    margin: auto;
+    overflow-wrap: break-word;
+}
+
+.card-button {
+    background-color: #2b5e30;
+}
