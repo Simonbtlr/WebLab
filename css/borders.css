@@ -1,24 +1,34 @@
-#logo > a > img {
-    border: 2px dashed red;
-}
+/*#logo > a > img {*/
+/*    border: 2px dashed red;*/
+/*}*/
 
-#container,
-footer,
-#main-window,
-#yard,
-.yard-field-container,
-.yard-buttons,
-.yard-info-panel,
-.yard-btn,
-.nav-button,
-#nav,
-#banner,
-#logo,
-#login,
-#username,
-#pfp,
-#currency,
-.currency-coins,
-.currency-seeds {
-    border: 2px dashed black;
-}
+/*#container,*/
+/*footer,*/
+/*#main-window,*/
+/*#yard,*/
+/*.yard-field-container,*/
+/*.yard-buttons,*/
+/*.yard-info-panel,*/
+/*.yard-btn,*/
+/*.nav-button,*/
+/*#nav,*/
+/*#banner,*/
+/*#logo,*/
+/*#login,*/
+/*#username,*/
+/*#pfp,*/
+/*#currency,*/
+/*.currency-coins,*/
+/*.currency-seeds {*/
+
+/*#child-labour-board,*/
+/*#nav-mission-board,*/
+/*.nav-mission-board-btn,*/
+/*#mission-board,*/
+/*#board-form,*/
+/*h4,*/
+/*#board-form > form,*/
+/*#board-form > form label*/
+/*{*/
+/*    border: 2px dashed black;*/
+/*}*/

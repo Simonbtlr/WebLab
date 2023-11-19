@@ -1,4 +1,4 @@
-#yard-container {
+.yard-container {
     display: flex;
     justify-content: space-between;
 }
@@ -40,8 +40,8 @@
     margin-top: 5px;
 }
 
-@media screen and (max-width: 950px) {
-    #yard-container {
+@media screen and (max-width: 850px) {
+    .yard-container {
         display: block;
     }
 

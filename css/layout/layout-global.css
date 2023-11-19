@@ -9,7 +9,6 @@ body {
     }
 }
 
-
 .darken {
     position: absolute;
     top: 0;
@@ -32,11 +31,11 @@ body {
     z-index: -1;
 }
 
-#fade-left {
+.fade-left {
     left: 0;
 }
 
-#fade-right {
+.fade-right {
     right: 0;
 }
 
