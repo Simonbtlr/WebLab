@@ -1,6 +1,6 @@
-function getRandInt() {
-    return Math.floor(Math.random() * (1500 - 1000) + 1000);
-}
+// function getRandInt() {
+//     return Math.floor(Math.random() * (1500 - 1000) + 1000);
+// }
 
 function changePage(pageNum) {
     const currentButton = document.getElementsByClassName('current-button')[0];
@@ -37,7 +37,7 @@ function shit(firstBirdId, lastBirdId) {
                         return response.json();
                     })
                 // imitate loading
-                .then(x => new Promise(resolve => setTimeout(() => resolve(x), getRandInt())))
+                // .then(x => new Promise(resolve => setTimeout(() => resolve(x), getRandInt())))
                 .then(json => {
                     let newBird = document.createElement('p');
                     newBird.classList.add('user-bird');
