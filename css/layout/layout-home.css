@@ -1,0 +1,8 @@
+.user-birds {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bird-id {
+    text-align: center;
+}
