@@ -1,7 +1,3 @@
-// function getRandInt() {
-//     return Math.floor(Math.random() * (1500 - 1000) + 1000);
-// }
-
 function changePage(pageNum) {
     const currentButton = document.getElementsByClassName('current-button')[0];
     if (currentButton.value - 1 === pageNum) {
@@ -12,13 +8,19 @@ function changePage(pageNum) {
     const newCurrentButton = document.getElementsByClassName('page-button')[pageNum];
     newCurrentButton.classList.add('current-button');
 
-    const firstBirdId = parseInt(newCurrentButton.innerText) * 10 - 9;
-    const lastBirdId = firstBirdId + 10;
-
-    shit(firstBirdId, lastBirdId);
+    loadBirds();
 }
 
-function shit(firstBirdId, lastBirdId) {
+function loadBirds() {
+    const currentButton = document.getElementsByClassName('current-button')[0];
+
+    const firstBirdId = parseInt(currentButton.innerText) * 10 - 9;
+    const lastBirdId = firstBirdId + 10;
+
+    fetchUserBirds(firstBirdId, lastBirdId);
+}
+
+function fetchUserBirds(firstBirdId, lastBirdId) {
     const preloader = document.getElementsByClassName('preloader')[0];
     preloader.style.display = '';
 
@@ -36,8 +38,6 @@ function shit(firstBirdId, lastBirdId) {
                         }
                         return response.json();
                     })
-                // imitate loading
-                // .then(x => new Promise(resolve => setTimeout(() => resolve(x), getRandInt())))
                 .then(json => {
                     let newBird = document.createElement('p');
                     newBird.classList.add('user-bird');
@@ -75,12 +75,7 @@ function shit(firstBirdId, lastBirdId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const currentButton = document.getElementsByClassName('current-button')[0];
-
-    const firstBirdId = parseInt(currentButton.innerText);
-    const lastBirdId = firstBirdId + 10;
-
-    shit(firstBirdId, lastBirdId);
+    loadBirds();
 
     const pageButtons = document.getElementsByClassName('page-buttons')[0].children;
 
