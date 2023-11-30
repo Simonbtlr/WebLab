@@ -1,3 +1,5 @@
+const birdsPerPage = 10;
+
 function changePage(pageNum) {
     const currentButton = document.getElementsByClassName('current-button')[0];
     if (currentButton.value - 1 === pageNum) {
@@ -14,10 +16,30 @@ function changePage(pageNum) {
 function loadBirds() {
     const currentButton = document.getElementsByClassName('current-button')[0];
 
-    const firstBirdId = parseInt(currentButton.innerText) * 10 - 9;
-    const lastBirdId = firstBirdId + 10;
+    const firstBirdId = parseInt(currentButton.innerText) * birdsPerPage - (birdsPerPage - 1);
+    const lastBirdId = firstBirdId + birdsPerPage;
 
     fetchUserBirds(firstBirdId, lastBirdId);
+}
+
+function createBird(json) {
+    let newBird = document.createElement('p');
+    newBird.classList.add('user-bird');
+
+    const birdId = json['id'];
+    const birdImgUrl = json['thumbnailUrl'];
+
+    let birdIdElem = document.createElement('p');
+    birdIdElem.innerHTML = birdId;
+    birdIdElem.classList.add('bird-id')
+
+    let birdImg = document.createElement('img');
+    birdImg.src = birdImgUrl;
+
+    newBird.append(birdIdElem);
+    newBird.append(birdImg);
+
+    return newBird
 }
 
 function fetchUserBirds(firstBirdId, lastBirdId) {
@@ -39,25 +61,8 @@ function fetchUserBirds(firstBirdId, lastBirdId) {
                         return response.json();
                     })
                 .then(json => {
-                    let newBird = document.createElement('p');
-                    newBird.classList.add('user-bird');
-
-                    const birdId = json['id'];
-                    const birdImgUrl = json['thumbnailUrl'];
-
-                    let birdIdElem = document.createElement('p');
-                    birdIdElem.innerHTML = birdId;
-                    birdIdElem.classList.add('bird-id')
-
-                    let birdImg = document.createElement('img');
-                    birdImg.src = birdImgUrl;
-
-                    newBird.append(birdIdElem);
-                    newBird.append(birdImg);
-
+                    const newBird = createBird(json);
                     userBirds.append(newBird);
-
-                    return json;
                 })
                 .catch((error) => {
                     const errorElem = document.createElement('div');

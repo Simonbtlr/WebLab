@@ -1,3 +1,5 @@
+import DOMPurify from 'dompurify'
+
 document.addEventListener("DOMContentLoaded", function () {
     function generateMissionCard(name, description, reward, timeLimit) {
         const missionCard = document.createElement('div');
@@ -31,11 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const missionReward = document.getElementById('mission-reward').value;
         const missionTimeLimit = document.getElementById('mission-time-limit').value;
 
+        console.log(missionName)
+
+        // remove HTML tags from input
+        // first argument is the text to sanitize, second argument is options (no tags allowed)
+        const sanitizedName = DOMPurify.sanitize(missionName, { ALLOWED_TAGS: [] });
+        const sanitizedDescription = DOMPurify.sanitize(missionDescription, { ALLOWED_TAGS: [] });
+        const sanitizedReward = DOMPurify.sanitize(missionReward, { ALLOWED_TAGS: [] });
+        const sanitizedTimeLimit = DOMPurify.sanitize(missionTimeLimit, { ALLOWED_TAGS: [] });
+
+        console.log(missionName)
+
         const missionCard = generateMissionCard(
-            missionName,
-            missionDescription,
-            missionReward,
-            missionTimeLimit)
+            sanitizedName,
+            sanitizedDescription,
+            sanitizedReward,
+            sanitizedTimeLimit
+        );
 
         resultContainer.append(missionCard);
 
